@@ -828,7 +828,7 @@
           repo: 'YunyueLin.github.io',
           owner: 'YunyueLin',
           admin: ['YunyueLin'],
-          id: <%= page.date %>,
+          id: decodeURI(location.pathname),
           distractionFreeMode: 'true'
         })
         gitalk.render('gitalk-container')
