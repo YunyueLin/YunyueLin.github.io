@@ -795,27 +795,20 @@
 
 
 
-
-    //_config.yml文件若没有添加enable: true可删除该判断
-
-    
-      <link rel='stylesheet' href="https://yiyeti.cc/usr/themes/veryse/css/gitalk.css">
-      <script src="https://yiyeti.cc/usr/themes/veryse/css/gitalk.min.js"></script>
-      <script type="text/javascript">
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
         var gitalk = new Gitalk({
-          clientID:  '',
-          clientSecret: '',
-          id: window.location.pathname,
+          clientID: '7f7496d306a34d871136',
+          clientSecret: '717ad9e2cf5cd59dfe54de2c4d61c9daf738cd53',
           repo: 'YunyueLin.github.io',
-          owner: '',
-          admin: '',
-          distractionFreeMode: 'true',
+          owner: 'YunyueLin',
+          admin: ['YunyueLin'],
+          id: md5(window.location.pathname),
+          distractionFreeMode: 'true'
         })
         gitalk.render('gitalk-container')
-      </script>
-    
-
-  
+        </script>
 
 
 
