@@ -88,7 +88,7 @@
 <meta property="og:description" content="这篇文章讲解了在 Swift 中的类的构造规则。 Swift 类或结构体如果所有的属性都有默认值，同时没有自定义构造器，那么 Swift 会给这些结构体或类提供一个默认构造器，它后简单的创建一个所有属性值都设置为默认值的实例。12345class Test &amp;#123;var title = &quot;Test&quot;&amp;#125;Test() 类的继承和构造过程:类里面的所有存储型属性(包括所有继承自父类的属性">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/2/27/161d7704c50d5f5d?w=896&h=429&f=png&s=9396">
-<meta property="og:updated_time" content="2018-04-19T13:30:04.000Z">
+<meta property="og:updated_time" content="2018-05-22T08:44:58.152Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Swift 类的构造方法">
 <meta name="twitter:description" content="这篇文章讲解了在 Swift 中的类的构造规则。 Swift 类或结构体如果所有的属性都有默认值，同时没有自定义构造器，那么 Swift 会给这些结构体或类提供一个默认构造器，它后简单的创建一个所有属性值都设置为默认值的实例。12345class Test &amp;#123;var title = &quot;Test&quot;&amp;#125;Test() 类的继承和构造过程:类里面的所有存储型属性(包括所有继承自父类的属性">
@@ -800,7 +800,7 @@
           repo: 'YunyueLin.github.io',
           owner: 'YunyueLin',
           admin: ['YunyueLin'],
-          id: '<%= page.date %>',
+          id: decodeURI(location.pathname),
           distractionFreeMode: 'true'
         })
         gitalk.render('gitalk-container')

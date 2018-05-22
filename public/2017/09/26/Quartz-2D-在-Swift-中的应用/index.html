@@ -90,7 +90,7 @@
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/2/27/161d76bcf0650dc8?w=670&h=646&f=jpeg&s=22776">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/2/27/161d76bcf0f78f32?w=272&h=274&f=jpeg&s=1671">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/2/27/161d76bcf0ebb77c?w=276&h=272&f=jpeg&s=1877">
-<meta property="og:updated_time" content="2018-04-19T13:30:33.000Z">
+<meta property="og:updated_time" content="2018-05-22T08:44:58.151Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Quartz 2D 在 Swift 中的应用">
 <meta name="twitter:description" content="Quartz 2D是一个二维绘图引擎，同时支持iOS和Mac系统。其实 iOS 中很多控件都是通过 Quartz 2D 画出来的.同时Quartz 2D还可以做这些事情,12341、剪裁图形2、涂鸦/画板（如签名等）3、手势解锁(连线)4、折线图、饼状图、柱形图等绘制(虽然我都是直接用 charts) 使用 Quartz 2D绘图的核心步骤：1234561、获得上下文2、绘制/拼接绘图路径3、将路">
@@ -804,7 +804,7 @@
           repo: 'YunyueLin.github.io',
           owner: 'YunyueLin',
           admin: ['YunyueLin'],
-          id: '<%= page.date %>',
+          id: decodeURI(location.pathname),
           distractionFreeMode: 'true'
         })
         gitalk.render('gitalk-container')
